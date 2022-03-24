@@ -5,7 +5,7 @@ import java.net.*;
 
 import javax.swing.JOptionPane;
 
-//test
+//testing
 
 public class multiClient {
 	public static void main(String[] args) throws IOException {
