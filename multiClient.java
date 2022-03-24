@@ -5,6 +5,8 @@ import java.net.*;
 
 import javax.swing.JOptionPane;
 
+//test
+
 public class multiClient {
 	public static void main(String[] args) throws IOException {
 		Socket socket = new Socket("104.255.205.33", 5000);
