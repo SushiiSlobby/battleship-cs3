@@ -1,15 +1,11 @@
-package battleship;
-
 import java.io.*;
 import java.net.*;
 
 import javax.swing.JOptionPane;
 
-//testing
-
 public class multiClient {
 	public static void main(String[] args) throws IOException {
-		Socket socket = new Socket("104.255.205.33", 5000);
+		Socket socket = new Socket("192.168.1.169", 5000);
 		
 		ServerConnection serverConn = new ServerConnection(socket);
 		

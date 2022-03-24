@@ -1,12 +1,12 @@
-package battleship;
-
 import java.awt.Graphics;
 import java.awt.Graphics2D;
+import java.awt.Image;
 import java.awt.BasicStroke;
 import java.awt.Color;
 import javax.swing.*;
 import java.util.*;
 import java.awt.MouseInfo;
+import java.awt.Toolkit;
 
 public class scene extends JPanel implements Runnable
 {
@@ -15,7 +15,7 @@ public class scene extends JPanel implements Runnable
 	
 	public scene()
 	{
-		setBackground(Color.blue.darker());
+		
 		
 		//add code here to make a new storage container
 		
@@ -26,12 +26,18 @@ public class scene extends JPanel implements Runnable
 
 	public void paintComponent( Graphics window )
 	{
+		Toolkit t = Toolkit.getDefaultToolkit();
+		Image b = t.getImage("sea.jpg");
+		Image i = t.getImage("boardimage.jpg");
+		
+		window.drawImage(b, 0, 0, this);
+//		window.drawImage(i, 650, 0, this); 
+//		window.drawImage(i, 650, 487, this);
+		// this is for the 1440p thing
 		
 		
 		
 		
-		window.setColor(Color.blue.darker());
-//		window.fillRect(0, 0, 800, 600);
 //		
 //		window.setColor(Color.yellow);
 //		Graphics2D a = (Graphics2D) window;

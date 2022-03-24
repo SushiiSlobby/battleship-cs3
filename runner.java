@@ -1,22 +1,20 @@
-package battleship;
-
 import java.awt.*;
 import javax.swing.*;
 
 public class runner extends JFrame
 {
-	private static final int WIDTH = 800;
-	private static final int HEIGHT = 600;
+	private static final int WIDTH = 1920;
+	private static final int HEIGHT = 1080;
 	
 	public runner()
 	{
 		super("Animation Runner");
-
-		setSize(WIDTH,HEIGHT);
+		Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
+		setSize(screenSize.width, screenSize.height);
 				
 		scene scene = new scene( );		       
 		add( scene );	       	
-      	setBackground(Color.blue.darker());
+      	
 		setVisible(true);	
 
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
